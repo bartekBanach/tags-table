@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Tags Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation
 
-Currently, two official plugins are available:
+To get started with the project, follow these simple steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Install Dependencies:** Run the following command to install project dependencies:
 
-## Expanding the ESLint configuration
+   ```
+   npm ci
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. **Start Development Server:** Once the dependencies are installed, start the development server using the following command:
 
-- Configure the top-level `parserOptions` property like this:
+   ```
+   npm start
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. **Run Storybook:** Additionally, you can run Storybook to view and develop UI components in isolation. Use the following command:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```
+   npm run storybook
+   ```
+
+That's it! You're now ready to start working on the project.
